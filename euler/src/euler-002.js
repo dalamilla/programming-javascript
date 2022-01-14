@@ -20,11 +20,11 @@ function Euler002(n) {
 
   while (fib2 <= n) {
     if (fib2 % 2 == 0) {
-      sum += fib2
+      sum += fib2;
     }
-    fib0 = fib1
-    fib1 = fib2
-    fib2 = fib0 + fib1
+    fib0 = fib1;
+    fib1 = fib2;
+    fib2 = fib0 + fib1;
   }
   return sum;
 }

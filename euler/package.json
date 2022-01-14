@@ -1,14 +1,16 @@
 {
   "name": "euler",
   "version": "1.0.0",
-  "description": "",
+  "description": "A series of challenging mathematical/computer programming problems.",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "fmt": "prettier --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.2"
+    "jest": "^27.2",
+    "prettier": "2.5.1"
   }
 }
