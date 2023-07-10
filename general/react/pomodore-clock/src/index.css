@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+:root {
+  --main-bg-color: #f5f5f5;
+  --main-text-color: #d9e6ec;
+  --clock-bg-color: #607483;
+  --clock-sh-color: #888888;
+  --pan-bg-color: #090a04;
+  --pan-sh-color: #30393f;
+  --dis-bg-color: #4d0e0d;
+  --dis-text-color: #d4091b;
+  --dis-sh-color: #1b0b0b;
+}
+
+@font-face {
+  font-family: 'Digital-7';
+  src: url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.eot');
+  src: url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.svg#Digital-7')
+      format('svg');
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+}
