@@ -1,0 +1,95 @@
+body {
+  background-image: url("img/pexels-kevin-bidwell-3118074.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: initial;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  opacity: .9;
+}
+
+.secTitle {
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #0561ce;
+}
+
+.secTesti {
+  height: 75%;
+  width: 100%;
+  display: flex;
+}
+
+.secTesti .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #d24d1b;
+  width: 10%;
+}
+
+.arrow i:hover {
+  color: #b70013;
+}
+
+.secTesti .testimonial {
+  width: 80%;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial #timg {
+  width: 100px;
+  height: 100px;
+}
+
+.testimonial #tname {
+  font-size: 30px;
+}
+
+.testimonial #tstar {
+  color: #289dde;
+  font-size: 25px;
+}
+
+.testimonial #tcomment {
+  color: #051e58;
+  font-size: 20px;
+}
+
+footer {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 20px;
+  color: #0561ce;
+  opacity: .9;
+}

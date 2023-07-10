@@ -4,10 +4,25 @@ List of Generic projects.
 
 ## Projects
 
-|  #  | Name                                                                 | Description                         |
-| ----| ---------------------------------------------------------------------| ------------------------------------|
-|  01 | [Caesars Cipher](./caesars-cipher/README.md)                         | Caesars Cipher.                     |
-|  02 | [Cash Register](./cash-register/README.md)                           | Cash Register.                      |
-|  03 | [Palindrome Checker](./palindrome-checker/README.md)                 | Palindrome Checker.                 |
-|  04 | [Roman Numeral Converter](./roman-numeral-converter/README.md)       | Roman Numeral Converter.            |
-|  05 | [Telephone Number Validator](./telephone-number-validator/README.md) | Telephone Number Validator.         |
+|  #  | Name                                                                              | Description                            |
+| ----| ----------------------------------------------------------------------------------| ---------------------------------------|
+|  01 | [Tribute Home Page](./tribute-homepage/README.md)                                 | Tribute homepage.                      |
+|  02 | [Survey Form](./survey-form/README.md)                                            | Survey form.                           |
+|  03 | [Product Home Page](./product-homepage/README.md)                                 | Product homepage.                      |
+|  04 | [Technical Documentation Home Page](./technical-documentation-homepage/README.md) | Technical documentation homepage.      |
+|  05 | [Personal Portfolio Home page](./personal-portfolio-homepage/README.md)           | Personal portfolio homepage.           |
+|  06 | [Random Quote Machine](./random-quote-machine/README.md)                          | Random quote machine.                  |
+|  07 | [Markdown Previewer](./markdown-previewer/README.md)                              | Markdown previewer.                    |
+|  08 | [Drum Machine](./drum-machine/README.md)                                          | Drum machine.                          |
+|  09 | [Counter](./counter/README.md)                                                    | Counter Up or Down.                    |
+|  10 | [Image Slider](./image-slider/README.md)                                          | Image Slider.                          |
+|  11 | [Pass The Message](./pass-the-message/README.md)                                  | Pass the message form.                 |
+|  12 | [PopUp Modal](./popup-modal/README.md)                                            | PopUp Modal for product images.        |
+|  13 | [Products Filter](./products-filter/README.md)                                    | Products shop filter.                  |
+|  14 | [Random Background Color](./random-background-color/README.md)                    | Random background color.               |
+|  15 | [Testimonial Slider](./testimonial-slider/README.md)                              | Restaurant client testimonial slider.  |
+|  16 | [Caesars Cipher](./caesars-cipher/README.md)                                      | Caesars Cipher.                        |
+|  17 | [Cash Register](./cash-register/README.md)                                        | Cash Register.                         |
+|  18 | [Palindrome Checker](./palindrome-checker/README.md)                              | Palindrome Checker.                    |
+|  19 | [Roman Numeral Converter](./roman-numeral-converter/README.md)                    | Roman Numeral Converter.               |
+|  20 | [Telephone Number Validator](./telephone-number-validator/README.md)              | Telephone Number Validator.            |
