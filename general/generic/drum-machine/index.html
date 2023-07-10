@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Machine</title>
+  </head>
+  <body>
+
+    <div id="drum-machine">
+      <div class="pad-area">
+        <button id="heater-1" class="drum-pad">Q
+          <audio class="clip" id="Q" src="/drums/Heater-1.mp3"></audio>
+        </button>
+        <button id="heater-2" class="drum-pad">W
+          <audio class="clip" id="W" src="/drums/Heater-2.mp3"></audio>
+        </button>
+        <button id="heater-3" class="drum-pad">E
+          <audio class="clip" id="E" src="/drums/Heater-3.mp3"></audio>
+        </button>
+        <button id="heater-4" class="drum-pad">A
+          <audio class="clip" id="A" src="/drums/Heater-4_1.mp3"></audio>
+        </button>
+        <button id="clap" class="drum-pad">S
+          <audio class="clip" id="S" src="/drums/Heater-6.mp3"></audio>
+        </button>
+        <button id="open-hh" class="drum-pad">D
+          <audio class="clip" id="D" src="/drums/Dsc_Oh.mp3"></audio>
+        </button>
+        <button id="kick-n-hat" class="drum-pad">Z
+          <audio class="clip" id="Z" src="/drums/Kick_n_Hat.mp3"></audio>
+        </button>
+        <button id="kick" class="drum-pad">X
+          <audio class="clip" id="X" src="/drums/RP4_KICK_1.mp3"></audio>
+        </button>
+        <button id="closed-hh" class="drum-pad">C
+          <audio class="clip" id="C" src="/drums/Cev_H2.mp3"></audio> </button>
+      </div>
+      <div class="panel-area">
+        <div id="display">
+          <div class="lcd">Drum Machine</div>
+        </div>
+        <div class="control">
+          <span>Volumen</span>
+          <input type="range" id="volumen" min="0" max="1" value=".5" step=".1">
+        </div>
+        <div class="logo">
+          <i class="fa-solid fa-kiwi-bird"></i>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
