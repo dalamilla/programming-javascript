@@ -15,7 +15,7 @@ npm install
 - Compiles and hot-reloads for development:
 
 ```
-npm run serve
+npm run dev
 ```
 
 - Compiles and minifies for production:
@@ -34,6 +34,12 @@ npm run test:unit
 
 ```
 npm run lint
+```
+
+- Format files:
+
+```
+npm run format
 ```
 
 ## Basic Features
