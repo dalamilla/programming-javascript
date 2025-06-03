@@ -1,8 +1,10 @@
+<script setup>
+import IconRotate from './icons/IconRotate.vue'
+</script>
+>
 <template>
   <div class="relative">
-    <div
-      class="flex flex-col overflow-hidden w-80 h-80 justify-around rounded-xl"
-    >
+    <div class="flex flex-col overflow-hidden w-80 h-80 justify-around rounded-xl">
       <div
         class="flex-auto flex flex-col justify-around items-center"
         v-bind:class="{
@@ -57,7 +59,7 @@
         class="h-8 w-8 object-right shadow-lg bg-gray-50 hover:bg-gray-200"
         v-on:click="swap = !swap"
       >
-        <img src="../assets/rotate.svg" alt="" />
+        <IconRotate />
       </button>
     </div>
   </div>
@@ -65,43 +67,43 @@
 
 <script>
 export default {
-  name: "converter",
+  name: 'converter-item',
   data() {
     return {
-      binary: "",
-      decimal: "",
+      binary: '',
+      decimal: '',
       swap: false,
-    };
+    }
   },
   methods: {
     binaryInput(event) {
-      const regex = /^[0-1]+$/;
+      const regex = /^[0-1]+$/
       if (!regex.test(event.key)) {
-        event.preventDefault();
+        event.preventDefault()
       }
     },
     decimalInput(event) {
-      const regex = /^[0-9]+$/;
+      const regex = /^[0-9]+$/
       if (!regex.test(event.key)) {
-        event.preventDefault();
+        event.preventDefault()
       }
     },
     binaryToDecimal() {
-      if (this.binary == "") {
-        this.decimal = "";
+      if (this.binary == '') {
+        this.decimal = ''
       } else {
-        this.decimal = parseInt(this.binary, 2);
+        this.decimal = parseInt(this.binary, 2)
       }
     },
     decimalToBinary() {
-      if (this.decimal == "") {
-        this.binary = "";
+      if (this.decimal == '') {
+        this.binary = ''
       } else {
-        this.binary = Number(this.decimal).toString(2);
+        this.binary = Number(this.decimal).toString(2)
       }
     },
   },
-};
+}
 </script>
 
 <style></style>
