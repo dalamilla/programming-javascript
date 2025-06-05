@@ -22,17 +22,7 @@
 
 @font-face {
   font-family: 'Digital-7';
-  src: url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.eot');
-  src: url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.eot?#iefix')
-      format('embedded-opentype'),
-    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.woff2')
-      format('woff2'),
-    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.woff')
-      format('woff'),
-    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.ttf')
-      format('truetype'),
-    url('//db.onlinewebfonts.com/t/aa205d91fb5a1df61dec1ff934aaa629.svg#Digital-7')
-      format('svg');
+  src: url('/fonts/digital-7.ttf');
 }
 
 #root {

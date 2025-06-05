@@ -1,8 +1,7 @@
 import { Component } from 'react';
-import Control from './components/Control';
-import Display from './components/Display';
+import Control from './components/Control.jsx';
+import Display from './components/Display.jsx';
 
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import './Clock.css';
 
 class Clock extends Component {
@@ -115,8 +114,7 @@ class Clock extends Component {
   };
 
   render() {
-    const BeepSound =
-      'https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav';
+    const BeepSound = '/audio/BeepSound.wav';
 
     return (
       <div className="clock">

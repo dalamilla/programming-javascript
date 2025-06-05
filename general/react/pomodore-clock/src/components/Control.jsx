@@ -1,4 +1,6 @@
 import './Control.css';
+import Play from './icons/Play.jsx';
+import RePlay from './icons/RePlay.jsx';
 
 const Control = (props) => {
   return (
@@ -35,10 +37,10 @@ const Control = (props) => {
       </div>
       <div className="control-action">
         <button id="start_stop" onClick={props.start}>
-          <i className="fas fa-play"></i>
+          <Play />
         </button>
         <button id="reset" onClick={props.reset}>
-          <i className="fas fa-reply"></i>
+          <RePlay />
         </button>
       </div>
     </div>
