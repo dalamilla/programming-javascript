@@ -9,7 +9,7 @@ To start this app:
 - Installing Dependencies:
 
 ```
-npm install
+npm ci
 ```
 
 - Compiles and hot-reloads for development:
@@ -24,19 +24,19 @@ npm run dev
 npm run build
 ```
 
-- Run your unit tests:
+- Run unit tests:
 
 ```
 npm run test:unit
 ```
 
-- Lints and fixes files:
+- Run lint:
 
 ```
 npm run lint
 ```
 
-- Format files:
+- Check format files:
 
 ```
 npm run format
