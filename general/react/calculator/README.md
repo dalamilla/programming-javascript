@@ -15,7 +15,7 @@ npm ci
 - Compiles and hot-reloads for development:
 
 ```
-npm run start
+npm run dev
 ```
 
 - Compiles and minifies for production:
@@ -24,10 +24,10 @@ npm run start
 npm run build
 ```
 
-- Run tests:
+- Run unit tests:
 
 ```
-npm run test
+npm run test:unit
 ```
 
 - Run lint:
@@ -36,10 +36,10 @@ npm run test
 npm run lint
 ```
 
-- Format files:
+- Check format files:
 
 ```
-npm run fmt
+npm run format
 ```
 
 ## Basic Features

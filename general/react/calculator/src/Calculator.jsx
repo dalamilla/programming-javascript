@@ -1,8 +1,8 @@
 import { Component } from 'react';
 
-import Brand from './components/Brand';
-import Display from './components/Display';
-import Panel from './components/Panel';
+import Brand from './components/Brand.jsx';
+import Display from './components/Display.jsx';
+import Panel from './components/Panel.jsx';
 
 import './Calculator.css';
 
@@ -52,8 +52,8 @@ class Calculator extends Component {
                 ? value
                 : formula
               : /([^.0-9]0|^0)$/.test(formula)
-              ? formula.slice(0, -1) + value
-              : formula + value,
+                ? formula.slice(0, -1) + value
+                : formula + value,
         });
       }
     }
@@ -87,7 +87,7 @@ class Calculator extends Component {
     }
   };
 
-  handleDecimal = (e) => {
+  handleDecimal = () => {
     let endsWithOperator = /[x+‑/]$/;
 
     if (this.state.evaluated === true) {

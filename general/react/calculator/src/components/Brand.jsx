@@ -5,7 +5,7 @@ const Brand = () => {
     <div className="brand">
       <div className="logo">
         <span className="line">Calculator</span>
-        <span className="model">react-01</span>
+        <span className="model">react-101</span>
       </div>
       <div className="solar">
         <div></div>
