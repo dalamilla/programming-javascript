@@ -21,8 +21,3 @@ List of Generic projects.
 |  13 | [Products Filter](./products-filter/README.md)                                    | Products shop filter.                  |
 |  14 | [Random Background Color](./random-background-color/README.md)                    | Random background color.               |
 |  15 | [Testimonial Slider](./testimonial-slider/README.md)                              | Restaurant client testimonial slider.  |
-|  16 | [Caesars Cipher](./caesars-cipher/README.md)                                      | Caesars Cipher.                        |
-|  17 | [Cash Register](./cash-register/README.md)                                        | Cash Register.                         |
-|  18 | [Palindrome Checker](./palindrome-checker/README.md)                              | Palindrome Checker.                    |
-|  19 | [Roman Numeral Converter](./roman-numeral-converter/README.md)                    | Roman Numeral Converter.               |
-|  20 | [Telephone Number Validator](./telephone-number-validator/README.md)              | Telephone Number Validator.            |
