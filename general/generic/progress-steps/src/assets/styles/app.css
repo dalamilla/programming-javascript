@@ -1,0 +1,91 @@
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.container {
+	text-align: center;
+}
+
+.progress {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: var(--space-lg);
+	max-width: 100%;
+	width: 350px;
+}
+
+.progress__bar-static {
+	background-color: var(--border-hover);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 8px;
+	width: 100%;
+	z-index: -1;
+}
+
+.progress__bar {
+	background-color: var(--accent);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 8px;
+	width: 0%;
+	z-index: -1;
+	transition: var(--transition-normal);
+}
+
+.progress__circle {
+	background-color: var(--bg-surface);
+	color: var(--text-secondary);
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid var(--border-hover);
+	transition: var(--transition-normal);
+}
+
+.progress__circle--active {
+	border-color: var(--accent);
+	background-color: var(--accent);
+	color: var(--text-on-accent);
+}
+
+.btn {
+	background-color: var(--accent);
+	color: var(--text-on-accent);
+	border: 0;
+	border-radius: var(--radius-sm);
+	cursor: pointer;
+	padding: var(--space-xs) var(--space-lg);
+	margin: 5px;
+	font-size: var(--font-size-sm);
+	transition:
+		background-color var(--transition-normal),
+		transform var(--transition-fast);
+}
+
+.btn:hover {
+	background-color: var(--accent-hover);
+}
+
+.btn--disabled {
+	background-color: var(--border-hover);
+	color: var(--text-secondary);
+	cursor: not-allowed;
+}
+
+.btn--disabled:hover {
+	background-color: var(--border-hover);
+}

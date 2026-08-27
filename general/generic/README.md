@@ -22,3 +22,4 @@ List of Generic projects.
 |  14 | [Random Background Color](./random-background-color/README.md)                    | Random background color.               |
 |  15 | [Testimonial Slider](./testimonial-slider/README.md)                              | Restaurant client testimonial slider.  |
 |  16 | [Expanding Cards](./expanding-cards/README.md)                                    | Expanding cards.                       |
+|  17 | [Progress Steps](./progress-steps/README.md)                                      | Progress steps.                        |
