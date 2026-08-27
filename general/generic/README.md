@@ -23,3 +23,4 @@ List of Generic projects.
 |  15 | [Testimonial Slider](./testimonial-slider/README.md)                              | Restaurant client testimonial slider.  |
 |  16 | [Expanding Cards](./expanding-cards/README.md)                                    | Expanding cards.                       |
 |  17 | [Progress Steps](./progress-steps/README.md)                                      | Progress steps.                        |
+|  18 | [Rotating Navigation Animation](./rotating-navigation-animation/README.md)        | Rotating navigation animation.         |
