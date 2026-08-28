@@ -1,27 +1,44 @@
-import './style.css';
+import "./assets/styles/main.css";
+import "./assets/styles/app.css";
 
-const number = document.querySelector('p');
-const buttons = document.querySelectorAll('.btncounter');
+const app = document.querySelector("#app");
+
+app.innerHTML = `
+  <div id="container">
+    <h1>Counter</h1>
+    <p></p>
+    <div id="form">
+      <input class="btncounter reduce" type="button" value="Reduce Count">
+      <input class="btncounter add" type="button" value="Add Count">
+    </div>
+  </div>
+`;
+
 let count = 0;
-number.textContent = 0;
 
+const numberEl = app.querySelector("p");
+const reduceBtn = app.querySelector(".btncounter.reduce");
+const addBtn = app.querySelector(".btncounter.add");
 
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    if (button.classList.contains("reduce")) {
-      count--;
-    }
-    if (button.classList.contains("add")) {
-      count++;
-    }
-    number.textContent = count;
+const render = () => {
+	numberEl.textContent = count;
+	numberEl.classList.remove("positive", "negative");
 
-    if (count > 0) {
-      number.style.color = "#1D8389";
-    } else if (count < 0) {
-      number.style.color = "#F94D3D";
-    } else {
-      number.style.color = "#000";
-    }
-  })
+	if (count > 0) {
+		numberEl.classList.add("positive");
+	} else if (count < 0) {
+		numberEl.classList.add("negative");
+	}
+};
+
+reduceBtn.addEventListener("click", () => {
+	count--;
+	render();
 });
+
+addBtn.addEventListener("click", () => {
+	count++;
+	render();
+});
+
+render();
