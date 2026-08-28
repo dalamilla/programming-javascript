@@ -1,0 +1,37 @@
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--bg-primary);
+}
+
+#app div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-sm);
+}
+
+#app button {
+	width: 12rem;
+	padding: var(--space-xs) var(--space-md);
+	font-family: var(--font-sans);
+	font-size: var(--font-size-xl);
+	color: var(--text-primary);
+	background-color: var(--bg-surface);
+	border: 2px solid var(--border-color);
+	border-radius: var(--radius-sm);
+	cursor: pointer;
+	transition:
+		background-color var(--transition-fast),
+		color var(--transition-fast),
+		border-color var(--transition-fast);
+}
+
+#app button:hover {
+	background-color: var(--accent);
+	color: var(--text-on-accent);
+	border-color: var(--accent);
+}
