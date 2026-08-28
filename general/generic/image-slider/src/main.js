@@ -1,33 +1,51 @@
-import './style.css';
-import '@fortawesome/fontawesome-free/css/all.css';
+import "./assets/styles/main.css";
+import "./assets/styles/app.css";
 
-const img = document.querySelector('.img-container');
-const buttons = document.querySelectorAll('.btn');
-const pictures = [
-  "pexels-anas-jawed-1697100.jpg",
-  "pexels-eberhard-grossgasteiger-1367067.jpg",
-  "pexels-henda-watani-320014.jpg",
-  "pexels-pixabay-208773.jpg",
-  "pexels-snapwire-730896.jpg"
-];
-let count = 0;
+import { ChevronLeft, ChevronRight, createIcons } from "lucide";
+import cat1 from "./assets/images/cat-1.jpg";
+import cat2 from "./assets/images/cat-2.jpg";
+import cat3 from "./assets/images/cat-3.jpg";
+import cat4 from "./assets/images/cat-4.jpg";
+import cat5 from "./assets/images/cat-5.jpg";
 
-img.style.backgroundImage = `url(img/${pictures[count]})`;
+const pictures = [cat1, cat2, cat3, cat4, cat5];
+let currentIndex = 0;
+
+const app = document.querySelector("#app");
+
+app.innerHTML = `
+  <div id="container">
+    <div class="arrow">
+      <i class="btn left" data-lucide="chevron-left" stroke-width="3"></i>
+    </div>
+    <div class="img-container"></div>
+    <div class="arrow">
+      <i class="fas fa-chevron-circle-right btn right" data-lucide="chevron-right" stroke-width="3"></i>
+    </div>
+  </div>
+`;
+
+createIcons({
+	icons: {
+		ChevronLeft,
+		ChevronRight,
+	},
+});
+
+const imgContainer = app.querySelector(".img-container");
+const buttons = app.querySelectorAll(".btn");
+
+const updateImage = () => {
+	imgContainer.style.backgroundImage = `url(${pictures[currentIndex]})`;
+};
 
 buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    if (button.classList.contains("right")) {
-      count++;
-      if (count > pictures.length - 1) {
-        count = 0;
-      }
-    }
-    if (button.classList.contains("left")) {
-      count--;
-      if (count < 0) {
-        count = pictures.length - 1;
-      }
-    }
-    img.style.backgroundImage = `url(img/${pictures[count]})`;
-  })
+	button.addEventListener("click", () => {
+		const direction = button.classList.contains("right") ? 1 : -1;
+		currentIndex =
+			(currentIndex + direction + pictures.length) % pictures.length;
+		updateImage();
+	});
 });
+
+updateImage();
