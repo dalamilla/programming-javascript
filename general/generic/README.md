@@ -25,3 +25,4 @@ List of Generic projects.
 |  17 | [Progress Steps](./progress-steps/README.md)                                      | Progress steps.                        |
 |  18 | [Rotating Navigation Animation](./rotating-navigation-animation/README.md)        | Rotating navigation animation.         |
 |  19 | [Hidden Search Widget](./hidden-search-widget/README.md)                          | Hidden search widget.                  |
+|  20 | [Blurry Loading](./blurry-loading/README.md)                                      | Blurry loading.                        |

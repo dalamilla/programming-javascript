@@ -1,0 +1,30 @@
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	color: var(--text-primary);
+	font-family: var(--font-sans);
+	line-height: var(--line-height);
+}
+
+.bg {
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: calc(100vw + 60px);
+	height: calc(100vh + 60px);
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	filter: blur(0);
+}
+
+.loading-text {
+	font-size: clamp(var(--font-size-2xl), 5vw, 3.125rem);
+	line-height: var(--lh-tight);
+	color: var(--text-on-accent);
+	transition: color var(--transition-normal);
+}
