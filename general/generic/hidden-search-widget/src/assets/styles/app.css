@@ -1,0 +1,65 @@
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	background-image: linear-gradient(90deg, var(--accent), var(--accent-hover));
+	font-family: var(--font-sans);
+	line-height: var(--line-height);
+	color: var(--text-primary);
+}
+
+.search {
+	position: relative;
+	height: 50px;
+}
+
+.search .input {
+	background-color: var(--bg-surface);
+	border: 1px solid var(--border-color);
+	color: var(--text-primary);
+	font-size: var(--font-size-lg);
+	padding: var(--space-xs) var(--space-sm);
+	height: 50px;
+	width: 50px;
+	transition:
+		width var(--transition-normal),
+		border-color var(--transition-fast);
+}
+
+.btn {
+	background-color: var(--bg-surface);
+	border: 1px solid var(--border-color);
+	color: var(--accent);
+	cursor: pointer;
+	font-size: var(--font-size-2xl);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition:
+		transform var(--transition-normal),
+		background-color var(--transition-fast);
+}
+
+.btn:focus,
+.input:focus {
+	outline: none;
+}
+
+.btn:hover {
+	background-color: var(--accent-subtle);
+}
+
+.search.active .input {
+	width: 200px;
+}
+
+.search.active .btn {
+	transform: translateX(198px);
+}

@@ -24,3 +24,4 @@ List of Generic projects.
 |  16 | [Expanding Cards](./expanding-cards/README.md)                                    | Expanding cards.                       |
 |  17 | [Progress Steps](./progress-steps/README.md)                                      | Progress steps.                        |
 |  18 | [Rotating Navigation Animation](./rotating-navigation-animation/README.md)        | Rotating navigation animation.         |
+|  19 | [Hidden Search Widget](./hidden-search-widget/README.md)                          | Hidden search widget.                  |
