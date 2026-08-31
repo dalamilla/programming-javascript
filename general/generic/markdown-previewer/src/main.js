@@ -1,10 +1,27 @@
-import './style.scss'
-import { marked } from 'marked';
+import "./assets/styles/main.css";
+import "./assets/styles/app.scss";
 
-const editor = document.querySelector('#editor');
-const preview = document.querySelector('#preview');
+import { marked } from "marked";
+import ghost from "./assets/images/ghost.svg?raw";
 
-let placeholder = `
+const app = document.querySelector("#app");
+
+app.innerHTML = `
+    <header>
+      ${ghost}
+    </header>
+    <main>
+      <div id="mk-editor">
+        <textarea id="editor" aria-label="Markdown content editor"></textarea>
+      </div>
+      <div id="preview"></div>
+    </main>
+`;
+
+const editor = document.querySelector("#editor");
+const preview = document.querySelector("#preview");
+
+const initialMarkdown = `
 # test 
 ## Test
 
@@ -28,17 +45,16 @@ Wild Header | Crazy Header | Another Header?
 ------------ | ------------- | -------------
 Your content can | be here, and it | can be here....
 And here. | Okay. | I think we get it.
-
 `;
 
-editor.value = placeholder;
-marked.setOptions({
-  breaks: true
-});
+editor.value = initialMarkdown.trim();
 
-preview.innerHTML = marked(editor.value);
+const updatePreview = (text) => {
+	preview.innerHTML = marked.parse(text, { breaks: true });
+};
 
+updatePreview(editor.value);
 
-editor.addEventListener('input', () => {
-  preview.innerHTML = marked(editor.value);
+editor.addEventListener("input", (e) => {
+	updatePreview(e.target.value);
 });
