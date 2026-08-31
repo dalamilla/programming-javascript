@@ -1,11 +1,13 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    baseUrl: 'http://localhost:5173',
-    video: false
-  },
+	allowCypressEnv: false,
+
+	e2e: {
+		setupNodeEvents(_on, config) {
+			return config;
+		},
+		baseUrl: "http://localhost:5173",
+		video: false,
+	},
 });
