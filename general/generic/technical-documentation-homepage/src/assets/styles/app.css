@@ -1,0 +1,11 @@
+#app {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
+	position: relative;
+	margin: 0;
+	font-family: var(--font-sans);
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	line-height: var(--line-height);
+}

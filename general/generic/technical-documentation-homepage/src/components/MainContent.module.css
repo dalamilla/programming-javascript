@@ -1,0 +1,61 @@
+.main-doc {
+	margin-left: 280px;
+	padding: var(--space-xl);
+	max-width: 900px;
+	width: 100%;
+}
+
+.section {
+	margin-bottom: var(--space-xl);
+	padding-bottom: var(--space-lg);
+	border-bottom: 1px solid var(--border-color);
+}
+
+.section:last-of-type {
+	border-bottom: none;
+}
+
+.section-header {
+	font-size: var(--font-size-2xl);
+	font-weight: 700;
+	color: var(--accent);
+	margin-bottom: var(--space-sm);
+}
+
+.paragraph {
+	text-align: left;
+	color: var(--text-primary);
+	font-size: var(--font-size-base);
+	margin-bottom: var(--space-sm);
+}
+
+.list {
+	padding-left: var(--space-md);
+	color: var(--text-primary);
+}
+
+.list-item {
+	margin-bottom: var(--space-xs);
+}
+
+.code-block {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--font-size-sm);
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+	line-height: var(--line-height);
+	padding: var(--space-sm);
+	color: var(--text-primary);
+	background-color: var(--bg-secondary);
+	border: 1px solid var(--border-color);
+	border-radius: var(--radius-md);
+	margin: var(--space-sm) 0;
+}
+
+@media screen and (width <= 815px) {
+	.main-doc {
+		margin-left: 0;
+		padding: var(--space-md);
+	}
+}
