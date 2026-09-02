@@ -1,0 +1,190 @@
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: var(--space-lg) var(--space-sm);
+	position: relative;
+}
+
+#app::after {
+	content: "";
+	opacity: 0.15;
+	inset: 0;
+	position: absolute;
+	z-index: -1;
+	background-image: url("../images/pattern.svg");
+	background-repeat: repeat;
+}
+
+header {
+	text-align: center;
+	margin-bottom: var(--space-lg);
+	padding: 0 var(--space-sm);
+}
+
+header h1 {
+	font-size: var(--font-size-2xl);
+	color: var(--text-primary);
+	margin-bottom: var(--space-xs);
+}
+
+header p {
+	font-size: var(--font-size-base);
+	color: var(--text-secondary);
+}
+
+#container {
+	background-color: var(--bg-surface);
+	border: 1px solid var(--border-color);
+	border-radius: var(--radius-lg);
+	padding: var(--space-lg);
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	box-shadow:
+		0 10px 25px -5px rgb(0 0 0 / 5%),
+		0 8px 10px -6px rgb(0 0 0 / 5%);
+}
+
+#survey-form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-sm);
+}
+
+#survey-form label:not(:has(input[type="radio"], input[type="checkbox"])) {
+	font-size: var(--font-size-sm);
+	font-weight: 600;
+	color: var(--text-primary);
+	margin-left: 0;
+	margin-bottom: 0.25rem;
+}
+
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"],
+#survey-form select,
+#survey-form textarea {
+	display: block;
+	width: 100%;
+	padding: 0.75rem var(--space-sm);
+	font-size: var(--font-size-base);
+	background-color: var(--bg-primary);
+	border: 1px solid var(--border-color);
+	border-radius: var(--radius-md);
+	color: var(--text-primary);
+	transition:
+		border-color var(--transition-fast),
+		background-color var(--transition-fast);
+	margin-left: 0;
+	height: auto;
+}
+
+#survey-form input:hover,
+#survey-form select:hover,
+#survey-form textarea:hover {
+	border-color: var(--border-hover);
+}
+
+#survey-form input:focus,
+#survey-form select:focus,
+#survey-form textarea:focus {
+	outline: none;
+	border-color: var(--accent);
+	background-color: var(--bg-surface);
+}
+
+.form-text {
+	font-size: var(--font-size-sm);
+	font-weight: 600;
+	color: var(--text-primary);
+	margin-left: 0;
+	margin-top: var(--space-xs);
+	margin-bottom: 0.25rem;
+}
+
+#survey-form label:has(input[type="radio"]),
+#survey-form label:has(input[type="checkbox"]) {
+	display: flex;
+	align-items: center;
+	gap: var(--space-xs);
+	font-size: var(--font-size-base);
+	font-weight: normal;
+	color: var(--text-primary);
+	margin-left: 0;
+	cursor: pointer;
+	padding: 0.25rem 0;
+}
+
+#survey-form input[type="radio"],
+#survey-form input[type="checkbox"] {
+	appearance: none;
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 1px solid var(--border-color);
+	background-color: var(--bg-primary);
+	display: grid;
+	place-content: center;
+	margin-left: 0;
+	transition: all var(--transition-fast);
+}
+
+#survey-form input[type="radio"] {
+	border-radius: 50%;
+}
+
+#survey-form input[type="checkbox"] {
+	border-radius: var(--radius-sm);
+}
+
+#survey-form input[type="radio"]:checked,
+#survey-form input[type="checkbox"]:checked {
+	background-color: var(--accent);
+	border-color: var(--accent);
+}
+
+#survey-form input[type="checkbox"]:checked::before {
+	content: "";
+	width: 0.55rem;
+	height: 0.3rem;
+	border-left: 2px solid var(--text-on-accent);
+	border-bottom: 2px solid var(--text-on-accent);
+	transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#survey-form input[type="radio"]:checked::before {
+	content: "";
+	width: 0.45rem;
+	height: 0.45rem;
+	border-radius: 50%;
+	background-color: var(--text-on-accent);
+}
+
+#comments {
+	min-height: 100px;
+}
+
+#submit {
+	margin-top: var(--space-sm);
+	display: block;
+	width: 100%;
+	padding: 0.875rem var(--space-md);
+	background: var(--accent);
+	color: var(--text-on-accent);
+	font-weight: 600;
+	border-radius: var(--radius-md);
+	cursor: pointer;
+	transition:
+		background-color var(--transition-fast),
+		transform var(--transition-fast);
+}
+
+#submit:hover {
+	background: var(--accent-hover);
+}
+
+#submit:active {
+	transform: scale(0.99);
+}
